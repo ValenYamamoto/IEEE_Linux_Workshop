@@ -1,0 +1,44 @@
+## Piping and Redirection
+Every command has 3 data streams:
+- STDIN (0) - input
+- STDOUT (1) - output, default prints to terminal
+- STDERR (2 ) - error, default prints to terminal
+
+To redirect to a file, use `>`:
+```bash
+ls -l > filename
+```
+This puts the output of `ls -l` in filename, erasing everything that was in
+filename previously. To append to the end of an existing file, use `>>`:
+```bash
+ls -l >> filename
+```
+which puts the output of `ls -l` at the end of filename and preserves the
+contents of filename that were there previously.
+
+Can also ssend data from a file and feed into another program.
+```bash
+wc -l < filename # Counts the number of lines in filename
+```
+To redirect stderr:
+```bash
+python3 throw_error.py 2> errorOutput # redirect error to errorOutput file
+python3 throw_error.py 2>&1 # redirect error stderr to stdout
+```
+Put an `&` in front of a number to denote the data stream you are redirecting
+to.
+
+Redirecting sends data to and from files; piping sends data from one program to
+another. The pipe operator is `|`.
+```bash
+ls | head -n 3 # take output of ls and pipe to head to only display 3 lines
+```
+
+Can use command `tee` to read from input and output it to stdout and at least
+one file simultaneously. Helpful for putting output from a program in a file
+while also having it appear on the screen in stdout.
+```bash
+python3 program_with_output.py | tee file1 # put output in stdout and file1
+python3 program_with_output.py | tee -a file1 # put output in stdout and
+# append to file1
+```

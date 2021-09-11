@@ -1,0 +1,34 @@
+## Getting Around
+Files in a Linux system are organized into directories, which are like folders on Windows and Mac OS systems.
+To see what directory you are currently in, use command **pwd**(print working directory)
+```bash
+pwd
+> /home/ieee-uci
+```
+
+To see what is in the directory you are currently in, use the command **ls**(list)
+```bash
+ls
+> directory1 file1 file2 file3 file4
+```
+Executing the command, you will see a list of the contents of the current
+directory you are in. **ls** has lots of additional options; a few that are
+used frequently:
+- `ls -a` -- also lists hidden files (filenames that start with '.')
+- `ls -l` -- long listing, includes file permissions, last modified time
+
+Can also see a single file by listing its name. This is useful for testing if a
+file actually exists
+```bash
+ls filename1 filename2
+```
+
+In order to switch directories, use command **cd**(change directory)
+```bash
+cd # returns you to home directory
+cd ./ # stay in same directory
+cd ../ # Go up to parent directory
+cd directory1 # change directory to directory1
+```
+cd paths are all relative to your current location.
+

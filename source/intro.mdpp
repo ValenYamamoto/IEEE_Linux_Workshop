@@ -1,0 +1,13 @@
+## Welcome to the Command Line
+prompt
+In order to find out what user you are currently logged in as, use command **whoami**(who am I)
+```bash
+whoami
+> ieee-uci
+```
+
+Some shortcuts for moving along current line
+* CTRL-a - go to start of line
+* CTRL-e - go to end of line
+* CTRL-u - cut from start of line
+* CTRL-k - cut to end of the line

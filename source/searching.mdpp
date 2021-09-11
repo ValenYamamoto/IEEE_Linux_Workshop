@@ -1,0 +1,24 @@
+## Searching
+
+The `find` command searches for files that match a certain pattern. To find a
+file that matches a certain pattern:
+
+```bash
+find . -name pattern
+```
+which will search the current directory and all directories under it. To start
+search at a different directory:
+```bash
+find ./directory_name -name pattern
+```
+
+The `grep` command searches inside a specific file for a certain pattern.
+```bash
+grep pattern filename # search filename for pattern
+grep pat1 pat2 filename # search filename for both pat1 and pat2
+```
+Can outputs to grep.
+```bash
+ls -l | grep ^d # list all directories 
+```
+

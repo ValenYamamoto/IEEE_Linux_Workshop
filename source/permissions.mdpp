@@ -1,0 +1,25 @@
+## Permissions
+All files have permissions associated with them that decide which users are allowed to do certain actions on each file. To view permission on a file, we use the command **ls -l**(list long)
+```bash
+ls -l ex_python_file.py
+> -rwxrw-rw 1 valen valen 3852 Aug 26 08:37 ex_python_file.py
+```
+The first field of the output is are the permissions.
+- r - read permission
+- w - write permission
+- x - execute permisison
+Any missing permission is filled with a `-`. There are 3 groups of permissions:
+- first group is owner permissions
+- second group is group permissions
+- third group is global permissions
+Each permission group can be represented as binary bitstring, where:
+- r=4
+- w=2
+- x=1
+The third field of `ls -l` is the owner, the fourth field is the group.
+
+To change permission, use `chmod` command:
+```bash
+chmod u+x file # add execute permission for user for file
+chmod 644 file # change permission on file to rwxr--r--
+```

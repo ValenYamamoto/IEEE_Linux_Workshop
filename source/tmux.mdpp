@@ -1,0 +1,15 @@
+## Introduction to Tmux
+Tmux is a terminal multiplexer. Using tmux, you can simulate having multiple
+windows open in a single terminal window at a time.
+
+To start tmux, simply type `tmux` on the command line.
+
+To create a new window, press `Ctrl-b c`. 
+
+To move between windows, use:
+* `Ctrl-b n` - moves to next window
+* `Ctrl-b p` - moves to previous window
+
+Tmux can also split the screen into multiple panes and facilitate a shared
+screen between people on the same machine. For more information, check out:
+[Tmux Cheat Sheet](https://tmuxcheatsheet.com)

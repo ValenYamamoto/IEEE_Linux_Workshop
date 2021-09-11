@@ -1,0 +1,30 @@
+## Introduction to Vim
+
+To edit a file in vim from the command line, type:
+```bash
+vim filename
+vi filename
+```
+
+When you first enter vim, you enter in normal mode.
+
+While you can use arrow keys in vim, to get the fastest performance use the
+keys:
+* k - up
+* j - down
+* h - left
+* l - right
+which only works in normal mode.
+
+To insert text, enter Insert mode by pressing `i`, which will allow you to
+begin inserting characters where the cursor currently is.
+
+Insert mode can also be reached by pressing `a`, which will begin inserting
+text after the cursor.
+
+To insert a line:
+* o - opens a line underneath where cursor is
+* O - opens a line above where cursor is
+
+For more info, check out [Vim Cheat Sheet](https://vim.rtorr.com)
+

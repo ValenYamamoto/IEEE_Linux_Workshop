@@ -1,0 +1,46 @@
+## Files
+Everything in a Linux system is a file. Most of these are familiar: text files, executable files, any type of code file; Some are a little more foriegn: external devices like flash drives are represented as files.
+
+To see what type of file a certain file is, use command **file**, which will give the type of file(pdf, executable, c code) regardless of what the extension on the file is.
+```bash
+file pythoncode.py
+> pythoncode.py: Python script, ASCII text executable
+```
+
+To see what is at the beginning of the file, use command **head**, which will by default show the first 10 lines of the file (but more can be optionally specified)
+```bash
+head pythoncode.py
+> # first 10 lines of pythoncode.py
+head -n 20 pythoncode.py
+> # first 20 lines of pythoncode.py
+```
+
+Conversely, you can also see the last few lines of a file with the command **tail**. tail can also be made to follow the end of the file as more lines are added.
+```bash
+tail pythoncode.py
+> # last 10 lines of pythoncode.py
+tail -n 20 pythoncode.py
+> # last 20 lines of pythoncode.py
+tail -f pythoncode.py
+> # posts last 10 lines of pythoncode.py and will continue to post lines as they appear in file
+```
+
+To view the entire file, use the command **cat**(concatenate). cat will print the entire contents of the list of files it is given. As files get bigger, cat becomes less managable and it is easier to use head and tail.
+```bash
+cat pythoncode.py
+> # puts entire pythoncode.py file on terminal
+cat pythoncode.py cppcode.cpp
+> # prints entire pythoncode.py file followed by entire cppcode.cpp file
+```
+If you want to view a long file with the ability to scroll up and down, use
+command `less` followed by filename. While in less:
+- `f` - next page
+- `b` - back one page
+- arrow keys - up and down
+- `q` - quit
+Can also use much of vim's search by pattern syntax.
+
+`less` can be used to view long outputs from programs:
+```bash
+python3 printStuff.py | less
+```

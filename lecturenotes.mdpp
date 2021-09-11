@@ -1,0 +1,23 @@
+# IEEE Linux Command Line Quickstart
+
+## Overview
+- [IEEE Linux Command Line Quickstart](#ieee-linux-command-line-quickstart)
+  - [Overview](#overview)
+  - [Welcome to the Command Line](#welcome-to-the-command-line)
+  - [Getting Around](#getting-around)
+  - [Files](#files)
+  - [Permissions](#permissions)
+  - [Pipes and Redirection](#pipes-and-redirection)
+  - [Searching Files](#searching)
+  - [Intro to Vim](#Intro-to-vim)
+  - [Intro to Tmux](#Intro-to-tmux)
+
+!INCLUDE "source/overview.mdpp"
+!INCLUDE "source/intro.mdpp"
+!INCLUDE "source/cd.mdpp"
+!INCLUDE "source/files.mdpp"
+!INCLUDE "source/permissions.mdpp"
+!INCLUDE "source/piping.mdpp"
+!INCLUDE "source/searching.mdpp"
+!INCLUDE "source/vim.mdpp"
+!INCLUDE "source/tmux.mdpp"
