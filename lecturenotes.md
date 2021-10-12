@@ -203,10 +203,6 @@ The `grep` command searches inside a specific file for a certain pattern.
 grep pattern filename # search filename for pattern
 grep pat1 pat2 filename # search filename for both pat1 and pat2
 ```
-Can outputs to grep.
-```bash
-ls -l | grep ^d # list all directories 
-```
 
 ## Introduction to Vim
 
@@ -236,8 +232,20 @@ To insert a line:
 * o - opens a line underneath where cursor is
 * O - opens a line above where cursor is
 
-For more info, check out [Vim Cheat Sheet](https://vim.rtorr.com)
 
+To get line numbers
+1. Get into normal mode
+2. Type `:set nu`
+
+To jump to specific line number, type `[line number] G` in normal mode
+
+To open a new tab, type `tabnew name_of_file` in normal mode
+
+To save a file, type `:w` in normal mode
+
+To exit vim, type `:q`
+
+For more info, check out [Vim Cheat Sheet](https://vim.rtorr.com)
 ## Introduction to Tmux
 Tmux is a terminal multiplexer. Using tmux, you can simulate having multiple
 windows open in a single terminal window at a time.

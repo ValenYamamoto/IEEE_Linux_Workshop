@@ -17,8 +17,4 @@ The `grep` command searches inside a specific file for a certain pattern.
 grep pattern filename # search filename for pattern
 grep pat1 pat2 filename # search filename for both pat1 and pat2
 ```
-Can outputs to grep.
-```bash
-ls -l | grep ^d # list all directories 
-```
 

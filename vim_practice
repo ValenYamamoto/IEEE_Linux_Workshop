@@ -1,0 +1,19 @@
+Welcome to Vim
+
+To move, 
+- k - up
+- j - down
+- h - left 
+- l - right
+
+gg- top of file
+G - bottom of file
+
+Press i to get into insert mode
+Press [ESC] to get back into normal mode
+
+Open a line: o (below), O (above)
+
+insert a line below:
+
+insert a line above:

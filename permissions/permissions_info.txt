@@ -1,0 +1,21 @@
+Permissions
+
+rwx rwx rwx
+|   |     |
+you |     |
+	group |
+          global
+
+
+r = 4
+w = 2
+x = 1
+
+read only:
+r--r--r--
+444
+
+read and execute:
+r-xr-xr-x
+555
+
